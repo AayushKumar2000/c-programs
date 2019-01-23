@@ -11,17 +11,17 @@ int main()
 	printf("enter a string");
 	 gets(st);
 		int l=strlen(st);
-		
-		printf("1 for changing in lower case and 0 for upper case");
+
+		printf("1 for changing in upper case and 0 for lower case");
 		scanf("%d",&n);
 		if(n==0)
 	      lower(st,l);
 	      else
 	      upper(st,l);
-	
+
 	  for(i=0;i<l;i++)
 	     printf("%c",st[i]);
-	
+
 }
 
 void lower(char *p,int l)
@@ -32,7 +32,7 @@ void lower(char *p,int l)
 		if(*p>=65&&*p<=90)
 		  *p=*p+32;
 		  p++;
-		
+
 	}
 }
 
